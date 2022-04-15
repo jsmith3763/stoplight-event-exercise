@@ -21,11 +21,10 @@ var isGreen = true;
 
 
 redBtn.addEventListener("click", function() {
+  redLight.classList.toggle("stop");
   if(isRed) {
-    redLight.style.backgroundColor = 'red';
     console.log("Red bulb on");
   }else {
-    redLight.style.backgroundColor = 'black';
     console.log("Red bulb off");
   }
   isRed = !isRed;
@@ -40,11 +39,10 @@ redBtn.addEventListener('mouseout', function() {
 })
 
 yellowBtn.addEventListener("click", function() {
+  yellowLight.classList.toggle("slow");
   if(isYellow) {
-    yellowLight.style.backgroundColor = 'yellow';
     console.log("Yellow bulb on");
   }else {
-    yellowLight.style.backgroundColor = 'black';
     console.log("Yellow bulb off");
   }
   isYellow = !isYellow;
@@ -59,11 +57,10 @@ yellowBtn.addEventListener('mouseout', function() {
 })
 
 greenBtn.addEventListener("click", function() {
+  greenLight.classList.toggle("go");
   if(isGreen) {
-    greenLight.style.backgroundColor = 'green';
     console.log("Green bulb on");
   }else {
-    greenLight.style.backgroundColor = 'black';
     console.log("Green bulb off");
   }
   isGreen = !isGreen;
